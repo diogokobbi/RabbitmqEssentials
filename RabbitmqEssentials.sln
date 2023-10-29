@@ -3,9 +3,35 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BasicPublisher", "BasicPublisher\BasicPublisher.csproj", "{F6919D02-628B-4AB5-8B5C-EE78FAE14919}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BasicPublisher", "BasicPublisher\BasicPublisher.csproj", "{F6919D02-628B-4AB5-8B5C-EE78FAE14919}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BasicConsumer", "BasicConsumer\BasicConsumer.csproj", "{28BE128E-6CD4-479E-BBE8-B4F4FB92B03F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BasicConsumer", "BasicConsumer\BasicConsumer.csproj", "{28BE128E-6CD4-479E-BBE8-B4F4FB92B03F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContentEncodedPublisher", "ContentEncodedPublisher\ContentEncodedPublisher.csproj", "{FC0FABAB-1D0F-4141-9D55-5A35599572BA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Basic", "Basic", "{CEE9D5CE-B511-4695-819C-1606A0A4B49F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ContentEncoding", "ContentEncoding", "{5BB40A32-DDF5-4E9F-9904-8D74E30BFA69}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DistributedBrokers", "DistributedBrokers", "{2FFCAEC3-CE39-437D-8F12-823B323330D7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PerformanceOptimized", "PerformanceOptimized", "{9ED4B4E8-0FD3-4529-84B0-5D9169225417}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AutomaticallyExpiring", "AutomaticallyExpiring", "{153FA441-E13F-41D0-9145-697142764C2F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MessageTracking", "MessageTracking", "{494F3E8A-F4E7-462B-8513-4AAB23DC053B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DynamicWorkflows", "DynamicWorkflows", "{781B7DF3-72C3-4B0A-88A8-271D3954D594}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CustomMessageRouting", "CustomMessageRouting", "{D15DBDCC-8D2D-453F-9F28-118659A115EB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MessagePrioritization", "MessagePrioritization", "{2D0892CA-59EE-430F-B793-7EC14AE54CAA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContentEncodedConsumer", "ContentEncodedConsumer\ContentEncodedConsumer.csproj", "{D51DC85B-A3CB-4B10-805A-92E646EEA581}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MassTransit", "MassTransit", "{F62B0BE5-29D9-4F84-92C8-2E7AB091FB8D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Logging", "Logging", "{0514F45D-386E-43AE-8FF9-27F3A58F7BD0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,9 +47,23 @@ Global
 		{28BE128E-6CD4-479E-BBE8-B4F4FB92B03F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{28BE128E-6CD4-479E-BBE8-B4F4FB92B03F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{28BE128E-6CD4-479E-BBE8-B4F4FB92B03F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FC0FABAB-1D0F-4141-9D55-5A35599572BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC0FABAB-1D0F-4141-9D55-5A35599572BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC0FABAB-1D0F-4141-9D55-5A35599572BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC0FABAB-1D0F-4141-9D55-5A35599572BA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D51DC85B-A3CB-4B10-805A-92E646EEA581}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D51DC85B-A3CB-4B10-805A-92E646EEA581}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D51DC85B-A3CB-4B10-805A-92E646EEA581}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D51DC85B-A3CB-4B10-805A-92E646EEA581}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{F6919D02-628B-4AB5-8B5C-EE78FAE14919} = {CEE9D5CE-B511-4695-819C-1606A0A4B49F}
+		{28BE128E-6CD4-479E-BBE8-B4F4FB92B03F} = {CEE9D5CE-B511-4695-819C-1606A0A4B49F}
+		{FC0FABAB-1D0F-4141-9D55-5A35599572BA} = {5BB40A32-DDF5-4E9F-9904-8D74E30BFA69}
+		{D51DC85B-A3CB-4B10-805A-92E646EEA581} = {5BB40A32-DDF5-4E9F-9904-8D74E30BFA69}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4E23305A-8E90-4A77-BF02-F5347043D674}
